@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h1>Hello World...</h1>
+{% for post in post_data %}
+    <h1>{{ post.title }}</h1>
+    <p>By {{ post.author }} on {{ post.date_completed }}</p>
+{% endfor %}
+
+{% endblock content %}
